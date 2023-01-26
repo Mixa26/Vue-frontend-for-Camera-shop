@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>  
+                        <div class="form-group">
+                        <label for="id">Update Camera shop</label>
+                        <input type="number" class="form-control" id="id" aria-describedby="idHelp" placeholder="Camera shop id">
+                        <small id="idHelp" class="form-text text-muted">Id of the camera shop from the table.</small>
+                        </div>
+                        <div class="form-group">
+                        <label for="shopName">New shop name</label>
+                        <input type="text" class="form-control" id="shopName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="shopLocation">New shop location</label>
+                            <input type="text" class="form-control" id="shopLocation" placeholder="Location">
+                        </div>
+                        <p style="color:red;" id="error"></p>
+                        <button type="submit" id="btn" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/update_camera_shop.js"></script>
+    </body>
+</html>

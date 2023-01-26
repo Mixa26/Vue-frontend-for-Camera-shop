@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+    <body onload="init()">      
+        <div class="container">
+          <h1>Users</h1>
+          <p style="color:red">Only admins are allowed to administrate users!</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Admin</th>
+                          </tr>
+                        </thead>
+                        <tbody id="users">
+                          <!-- <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                          </tr> -->
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <p style="color:red;" id="error"></p>
+        </div>
+        <script src="/show_users.js"></script>
+    </body>
+</html>

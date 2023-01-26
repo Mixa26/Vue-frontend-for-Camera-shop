@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="/main.js"></script>
+    </head> 
+    <body onload="init()">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-6">
+                    <h1>Camera shops:</h1>
+                    <a href="http://127.0.0.1:9000/admin/camera_shops">Show camera shops</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_camera_shops">Add camera shop</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_camera_shops">Delete camera shop</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_camera_shops">Update camera shop</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Cameras:</h1>
+                    <a href="http://127.0.0.1:9000/admin/cameras">Show cameras</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_cameras">Add camera</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_cameras">Delete camera</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_cameras">Update camera</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Employees:</h1>
+                    <a href="http://127.0.0.1:9000/admin/employees">Show employees</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_employees">Add employee</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_employees">Delete employee</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_employees">Update employee</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Filters:</h1>
+                    <a href="http://127.0.0.1:9000/admin/filters">Show filters</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_filters">Add filter</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_filters">Delete filter</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_filters">Update filter</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Lenses:</h1>
+                    <a href="http://127.0.0.1:9000/admin/lenses">Show lenses</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_lenses">Add lense</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_lenses">Delete lense</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_lenses">Update lense</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Microphones:</h1>
+                    <a href="http://127.0.0.1:9000/admin/microphones">Show microphones</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_microphones">Add microphone</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_microphones">Delete microphone</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_microphones">Update microphone</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Purchases:</h1>
+                    <a href="http://127.0.0.1:9000/admin/purchases">Show purchases</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_purchases">Add purchase</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_purchases">Delete purchase</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_purchases">Update purchase</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Shopping carts:</h1>
+                    <a href="http://127.0.0.1:9000/admin/shopping_cart">Show shopping carts</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_shopping_cart">Add shopping cart</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_shopping_cart">Delete shopping cart</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_shopping_cart">Update shopping cart</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Suppliers:</h1>
+                    <a href="http://127.0.0.1:9000/admin/suppliers">Show suppliers</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_suppliers">Add supplier</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_suppliers">Delete supplier</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_suppliers">Update supplier</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Tripods:</h1>
+                    <a href="http://127.0.0.1:9000/admin/tripods">Show tripods</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_tripods">Add tripod</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_tripods">Delete tripod</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_tripods">Update tripod</a>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Users:</h1>
+                    <a href="http://127.0.0.1:9000/admin/users">Show users</a> |
+                    <a href="http://127.0.0.1:9000/admin/create_users">Add user</a> |
+                    <a href="http://127.0.0.1:9000/admin/delete_users">Delete user</a> |
+                    <a href="http://127.0.0.1:9000/admin/update_users">Update user</a>
+                </div>
+                <div class="col-lg-6">
+                    <button id="btn" class="btn btn-primary">Logout</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

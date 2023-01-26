@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <h1>Update lens</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form method="put" action="/api/lenses">  
+                        <div class="form-group">
+                            <label for="id">Lens id</label>
+                            <input type="text" id="id" class="form-control" aria-describedby="nameHelp" placeholder="Id of the lens to update">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" class="form-control" aria-describedby="nameHelp" placeholder="New company">
+                        </div>
+                        <div class="form-group">
+                            <label for="zoom">Zoom</label>
+                            <input type="text" id="zoom" class="form-control" placeholder="New zoom">
+                        </div>
+                        <div class="form-group">
+                            <label for="focal_length">Focal length</label>
+                            <input type="text" id="focal_length" class="form-control" placeholder="New length">
+                        </div>
+                        <div class="form-group">
+                            <label for="mount">Mount</label>
+                            <input type="text" id="mount" class="form-control" placeholder="New mount">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price $</label>
+                            <input type="text" id="price" class="form-control" placeholder="New price">
+                        </div>
+                        <p style="color:red;" id="error"></p>
+                        <button type="submit" id="btn" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/update_lenses.js"></script>
+    </body>
+</html>

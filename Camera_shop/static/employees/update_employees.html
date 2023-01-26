@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <h1>Update employee</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form method="put" action="/api/employees">  
+                        <div class="form-group">
+                            <label for="id">Employee id</label>
+                            <input type="text" id="id" class="form-control" aria-describedby="nameHelp" placeholder="Id of the employee to update">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Employee name</label>
+                            <input type="text" id="name" class="form-control" aria-describedby="nameHelp" placeholder="New name">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Employee surname</label>
+                            <input type="text" id="surname" class="form-control" placeholder="New surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" class="form-control" placeholder="New email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNum">Phone number</label>
+                            <input type="text" id="phoneNum" class="form-control" placeholder="New phone number">
+                        </div>
+                        <p style="color:red;" id="error"></p>
+                        <button type="submit" id="btn" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/update_employees.js"></script>
+    </body>
+</html>

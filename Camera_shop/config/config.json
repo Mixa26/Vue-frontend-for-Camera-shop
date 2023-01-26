@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "mixa",
+    "password": "1234",
+    "database": "camera_shop_dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "mixa",
+    "password": "1234",
+    "database": "camera_shop_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "mixa",
+    "password": "1234",
+    "database": "camera_shop_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

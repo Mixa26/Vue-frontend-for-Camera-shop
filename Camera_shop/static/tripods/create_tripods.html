@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <h1>Add tripod</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form method="post" action="/api/tripods">  
+                        <div class="form-group">
+                            <label for="company">Company name</label>
+                            <input type="text" id="company" class="form-control" aria-describedby="nameHelp" placeholder="Company name">
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Tripod model</label>
+                            <input type="text" id="model" class="form-control" placeholder="Tripod model">
+                        </div>
+                        <div class="form-group">
+                            <label for="carry_capacity">Carry capacity</label>
+                            <input type="text" id="carry_capacity" class="form-control" placeholder="Carry capacity">
+                        </div>
+                        <div class="form-group">
+                            <label for="meant_for">Meant for</label>
+                            <input type="text" id="meant_for" class="form-control" placeholder="Meant for">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price $</label>
+                            <input type="text" id="price" class="form-control" placeholder="Price">
+                        </div>
+                        <div class="form-group">
+                            <label for="cameraShopId">Shop id</label>
+                            <input type="text" id="cameraShopId" class="form-control" placeholder="Id of the shop where to add the tripod">
+                        </div>
+                        <p style="color:red;" id="error"></p>
+                        <button type="submit" id="btn" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/create_tripods.js"></script>
+    </body>
+</html>

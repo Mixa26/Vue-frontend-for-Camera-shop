@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body onload="init()">
+        <div class="container">
+            <h1>Add camera</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form method="post" action="/api/cameras">  
+                        <div class="form-group">
+                            <label for="company">Company name</label>
+                            <input type="text" id="company" class="form-control" aria-describedby="nameHelp" placeholder="Company name">
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Camera model</label>
+                            <input type="text" id="model" class="form-control" placeholder="Camera model">
+                        </div>
+                        <div class="form-group">
+                            <label for="sensor">Sensor type</label>
+                            <input type="text" id="sensor" class="form-control" placeholder="Sensor">
+                        </div>
+                        <div class="form-group">
+                            <label for="megapixels">Megapixels</label>
+                            <input type="text" id="megapixels" class="form-control" placeholder="Megapixels">
+                        </div>
+                        <div class="form-group">
+                            <label for="video_size">Video size</label>
+                            <input type="text" id="video_size" class="form-control" placeholder="Resolution">
+                        </div>
+                        <div class="form-group">
+                            <label for="video_fps">Video fps</label>
+                            <input type="text" id="video_fps" class="form-control" placeholder="Fps">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price $</label>
+                            <input type="text" id="price" class="form-control" placeholder="Price">
+                        </div>
+                        <div class="form-group">
+                            <label for="cameraShopId">Shop id</label>
+                            <input type="text" id="cameraShopId" class="form-control" placeholder="Id of the shop where to add the camera">
+                        </div>
+                        <p style="color:red;" id="error"></p>
+                        <button type="submit" id="btn" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/create_cameras.js"></script>
+    </body>
+</html>
